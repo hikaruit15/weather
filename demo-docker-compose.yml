@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  app:
+    container_name: mindX-app
+    build:
+      dockerfile: Dockerfile.demo
+      context: .
+    ports:
+      - "8088:8088"
